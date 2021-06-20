@@ -84,7 +84,8 @@ body {
 }
 
 .content a:hover {
-  box-shadow: -1px 0px 41px 13px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 0px 41px 13px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
 }
 
 .content span {
