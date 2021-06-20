@@ -1,0 +1,41 @@
+body {
+  font-family: Montserrat, sans-serif;
+  background: rgb(235, 237, 239);
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0px 0px 10px;
+  border-radius: 5px;
+}
+
+.list-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.list-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.list-item:last-child {
+  background: rgb(118, 215, 196);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.list-item:last-child:hover {
+  background: rgb(26, 188, 156);
+}
