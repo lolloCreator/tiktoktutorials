@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <em>Toggle Dark Mode</em>
+      </div>
+      <main class="contatti">
+        <div class="form_wrapper">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column single">
+              <div class="form_left">
+                <h1>Write us</h1>
+                <div class="form_row">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    placeholder="Lumen Lab Dev"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form_row">
+                  <label for="name">E-mail</label>
+                  <input
+                    type="text"
+                    placeholder="lumenlabhelp@gmail.com"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form_row">
+                  <p for="name">Verification</p>
+                  <div class="robot_cb">
+                    <input type="checkbox" id="scales" name="scales" />
+                    <label for="scales">I am not a robot</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column double">
+              <div class="form_right">
+                <label for="name">Message</label>
+                <textarea class="message" id="message" type="text" name="name">
+Write message here...</textarea
+                >
+              </div>
+              <button
+                type="submit"
+                class="contact_btn_submit"
+                form="nameform"
+                value="Submit"
+              >
+                SEND MESSAGE
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+
+  <script src="/script.js"></script>
+</html>

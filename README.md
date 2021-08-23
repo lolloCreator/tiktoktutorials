@@ -36,11 +36,17 @@ Ciao, benvenuto in questa repository. Quì potrai trovare tutti i codici pubblic
 [0a]: https://www.tiktok.com/@lumenlabdev/video/6969272987207994630
 [1a]: https://www.tiktok.com/@lumenlabdev/video/6969272987207994630
 [2a]: https://www.tiktok.com/@lumenlabdev/video/6971503745108544773
-[3a]: #
+[3a]: https://www.tiktok.com/@lumenlabdev/video/6976291345694592262
+[4a]: https://www.tiktok.com/@lumenlabdev/video/6984073018330975493
+[5a]: https://www.tiktok.com/@lumenlabdev/video/6990254475516628230
+[6a]: https://www.tiktok.com/@lumenlabdev/video/6999333681097657605
 
 <!-- TABELLE - URL sezione LINK -->
 
-[0]: html-css/card-animated
+[0]: html-css/simple-navbar
 [1]: html-css/card-animated
 [2]: html-css/landing-page
 [3]: html-css/thank-you-card
+[4]: html-css/music-player
+[5]: html-css/football-card
+[6]: html-css/contact-us-card-light-dark-theme

@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Exo;
+  src: url(font/exo.ttf);
+}
+
+body {
+  font-family: "Exo", sans-serif;
+  margin: 0;
+}
+
+section {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(img/allianz_stadium.png);
+  background-color: #2c2e43;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.card-list {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card_border,
+.card_border-line,
+.card_inner {
+  -webkit-clip-path: polygon(
+    50% 0,
+    100% 20%,
+    100% 80%,
+    50% 100%,
+    0% 80%,
+    0% 20%
+  );
+  clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+}
+
+.card {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card_border {
+  position: absolute;
+  width: 98%;
+  height: 102%;
+  background: white;
+  left: 1%;
+  top: 1%;
+}
+
+.card_border-line {
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  left: 2.5%;
+  top: 2.5%;
+  background: linear-gradient(to bottom, #f8d177 33%, black 70%);
+}
+
+.card_inner {
+  background: linear-gradient(179deg, black, #ffffff 90%);
+  padding: 0.5rem 0.2rem 0rem;
+  width: 92%;
+  margin-top: 4.8%;
+  margin-left: 4%;
+}
+
+.card_img {
+  display: flex;
+  padding: 0 1.5rem;
+  background: repeating-linear-gradient(
+    126deg,
+    rgba(255, 255, 255, 0.219) 0%,
+    #ffffff57 1.2%,
+    transparent 1.19%,
+    transparent 4%,
+    transparent 4.1%
+  );
+}
+@media screen and (max-width: 550px) {
+  section {
+    flex-direction: column;
+  }
+  .card {
+    margin-top: 100px;
+  }
+  .card_img {
+    padding: 0 0.2rem;
+  }
+}
+
+.img_team {
+  flex: 1 1 30%;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  padding: 0.3rem;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.img_athlete {
+  flex: 1 1 75%;
+  padding-top: 8%;
+}
+.img_athlete img {
+  width: 120%;
+  object-fit: cover;
+  object-position: top;
+  margin-left: -11%;
+}
+
+.card_type {
+  width: 50%;
+  width: min-content;
+  margin: auto;
+  padding: 0 10%;
+  border-radius: 5px;
+  background: hsl(40, 100%, 50%);
+  color: white;
+  font-size: 1.5rem;
+  margin-top: -6%;
+}
+@media screen and (max-width: 500px) {
+  .card__type {
+    font-size: min(1.2rem, 5vw);
+  }
+}
+
+.card_text {
+  position: relative;
+  padding-bottom: 16%;
+}
+.card__text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 22px;
+  bottom: 0;
+  background: url("img/texture.jpg");
+  /* Sand texture*/
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.name {
+  font-size: 2.8rem;
+  margin: 2% 0 0;
+  position: relative;
+}
+.name:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5%;
+}
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: min(10vw, 2.5rem);
+  }
+}
+
+.points {
+  font-size: 4rem;
+  margin: 0rem 0 10%;
+  position: relative;
+}
+.points:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 5%;
+  background: black;
+}
+@media screen and (max-width: 500px) {
+  .points {
+    font-size: min(12vw, 3.5rem);
+  }
+}
+
+.card.juventus {
+  filter: drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 15px white);
+}
+
+.juventus .name:before {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #3730305c,
+    black,
+    #0000004f,
+    transparent
+  );
+}
+
+.card.barcelona {
+  filter: drop-shadow(0px 0px 5px #edbb00) drop-shadow(0px 0px 15px #edbb00);
+}
+
+.barcelona .name:before {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #edbb005c,
+    #004d98,
+    #a500444f,
+    transparent
+  );
+}
+
+.card.psg {
+  filter: drop-shadow(0px 0px 5px #004d98) drop-shadow(0px 0px 15px #004d98);
+}
+
+.psg .name:before {
+  background: linear-gradient(
+    to right,
+    transparent,
+    #0041705c,
+    #da291c,
+    #004170af,
+    transparent
+  );
+}
